@@ -1,0 +1,151 @@
+/* Application Container */
+.application-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(24, 24, 24, 0.95);
+    border: 2px solid #f5c518;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(245, 197, 24, 0.6);
+  }
+  
+.application-container h1 {
+    text-align: center;
+}
+
+.application-container p {
+    color: #fff;
+    text-align: center;
+}
+
+.application-container h3 {
+    text-align: center;
+}
+
+  /* Form Styling */
+  .application-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+.instagram {
+    text-align: center;
+
+}
+
+  /* Input, Select, and Textarea Styling */
+  .application-form input,
+  .application-form select,
+  .application-form textarea {
+    padding: 10px;
+    border: 1px solid #f5c518;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #0f0f0f;
+    color: #f5c518;
+  }
+  
+  /* Multi-Select Styling */
+  .application-form select[multiple] {
+    height: 150px;
+    overflow-y: auto;
+  }
+  
+  /* Button Styling */
+  .application-form button {
+    background-color: #f5c518;
+    color: #0f0f0f;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .application-form button:hover {
+    background-color: #ffdd44;
+    box-shadow: 0 5px 15px rgba(245, 197, 24, 0.9);
+  }
+  
+  /* Label Styling */
+  .application-form label {
+    color: #f5c518;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  /* Checkbox Group Container */
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  /* Checkbox Item */
+  .checkbox-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  /* Styling Checkboxes */
+  .checkbox-item input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+  }
+  
+  /* Checkbox Labels */
+  .checkbox-item label {
+    font-size: 16px;
+    color: #f5c518;
+    cursor: pointer;
+  }
+  
+  .success-message {
+    background-color: #4caf50;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    margin: 10px 0;
+    text-align: center;
+    animation: fadeOut 5s forwards;
+  }
+  
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+  
+  /* Button Styling */
+  .submit-button {
+    background-color: #f5c518;
+    color: #0f0f0f;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 5px 15px rgba(245, 197, 24, 0.6);
+    transition: all 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: #e0a800;
+    box-shadow: 0 8px 20px rgba(245, 197, 24, 0.8);
+    transform: translateY(-2px);
+  }
+  

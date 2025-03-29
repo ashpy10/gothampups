@@ -1,0 +1,62 @@
+.parent-carousel-container {
+    position: relative; /* Ensures buttons stay within carousel bounds */
+    margin-bottom: 60px;
+  }
+  
+  .parent-carousel h2 {
+    font-size: 28px;
+    color: #f5c518;
+    margin-bottom: 20px;
+    text-shadow: 0 0 12px #f5c518;
+    text-align: center;
+  }
+  
+  .parent-carousel {
+    background-color: rgba(24, 24, 24, 0.9);
+    border: 2px solid #f5c518;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(245, 197, 24, 0.6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 480px; /* Prevent cards from stretching too much */
+    min-width: 320px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  
+  .parent-carousel-image,
+  .parent-carousel-video {
+    width: 100%;
+    max-height: 500px;
+    border-radius: 12px;
+  }
+  
+  .prev-btn,
+  .next-btn {
+    position: absolute;
+    top: 50%;
+    color: #f5c518;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    transform: translateY(-50%);
+    z-index: 10;
+    transition: background-color 0.3s ease;
+  }
+  
+  .prev-btn {
+    left: 10px;
+  }
+  
+  .next-btn {
+    right: 10px;
+  }
+  
+  .prev-btn:hover,
+  .next-btn:hover {
+    background-color: #f5c518;
+    color: #0f0f0f;
+  }
+  
