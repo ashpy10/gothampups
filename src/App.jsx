@@ -41,52 +41,52 @@ const App = () => {
   const parentMedia = [
     {
       type: "image",
-      url: "public/assets/puppy/100.png",
+      url: "/assets/puppy/100.png",
       alt: "Bruce & Quinn",
     },
     {
       type: "image",
-      url: "public/assets/puppy/50.png",
+      url: "/assets/puppy/50.png",
       alt: "Bruce - The Sire (Parent 1)",
     },
     {
       type: "image",
-      url: "public/assets/puppy/40.png",
+      url: "/assets/puppy/40.png",
       alt: "Quinn - Enjoying the outdoors",
     },
     {
       type: "image",
-      url: "public/assets/puppy/41.png",
+      url: "/assets/puppy/41.png",
       alt: "Quinn - Pregnant",
     },
     {
       type: "image",
-      url: "public/assets/puppy/51.png",
+      url: "/assets/puppy/51.png",
       alt: "Bruce",
     },
     {
       type: "image",
-      url: "public/assets/puppy/42.png",
+      url: "/assets/puppy/42.png",
       alt: "Quinn",
     },
     {
       type: "image",
-      url: "public/assets/puppy/52.png",
+      url: "/assets/puppy/52.png",
       alt: "Bruce",
     },
     {
       type: "image",
-      url: "public/assets/puppy/43.png",
+      url: "/assets/puppy/43.png",
       alt: "Quinn",
     },
     {
       type: "image",
-      url: "public/assets/puppy/52.png",
+      url: "/assets/puppy/52.png",
       alt: "Bruce",
     },
     {
       type: "image",
-      url: "public/assets/puppy/44.png",
+      url: "/assets/puppy/44.png",
       alt: "Quinn",
     },
   ];

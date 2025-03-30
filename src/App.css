@@ -9,7 +9,7 @@ body {
   font-family: 'Gotham', sans-serif;
   background-color: #0f0f0f;
   background-blend-mode:soft-light;
-  background-image: url('public/assets/puppy/global/background.jpg'); /* Add distressed texture image */
+  background-image: url('/assets/puppy/global/background.jpg'); /* Add distressed texture image */
   background-size: cover;
   background-attachment: fixed;
   color: #f5c518;
@@ -47,8 +47,7 @@ h3 {
   background: linear-gradient(
     rgba(0, 0, 0, 0.8),
     rgba(0, 0, 0, 0.7)
-  ),
-  url("/assets/puppy/global/hero-bg.jpg") no-repeat center center/cover;
+  );
   padding: 60px 20px;
   text-align: center;
   color: #fff;

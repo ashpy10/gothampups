@@ -7,7 +7,7 @@ const Navbar = () => {
         <nav className="navbar">
             <div className="nav-container">
                 <div className="nav-logo">
-                    <img src="./public/assets/puppy/global/logo.png" />
+                    <img src="/assets/puppy/global/logo.png" />
                     <h1>Gotham Goldens</h1>
                 </div>
                 <ul className="nav-links">
