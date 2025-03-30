@@ -10,7 +10,7 @@ const sendEmail = async (formData) => {
   });
 
   const message = {
-    from: "azfountas@gmail.com",
+    from: "ashley@foxhuntdigital.io",
     to: "azfountas@gmail.com", // Receive notifications here
     subject: "New Puppy Application Received",
     text: `
