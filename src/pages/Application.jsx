@@ -58,7 +58,7 @@ const Application = () => {
         e.preventDefault();
 
         try {
-            const response = await fetch("/api/applications", {
+            const response = await fetch("https://gothampups-production.up.railway.app/api/applications", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
