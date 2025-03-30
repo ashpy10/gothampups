@@ -58,7 +58,7 @@ const Application = () => {
         e.preventDefault();
 
         try {
-            const response = await fetch("https://gothampups-production.up.railway.app/api/applications", // 🚀 Update with live URL
+            const response = await fetch("https://script.google.com/macros/s/AKfycbxZCxyS6XCeqI8ile1h51xMAeWHsvMMIzx7ZKTkxVPdsO8MJeWP0ZlyMgao6SEs8m46/exec", // 🚀 Update with live URL
                 {
                     method: "POST",
                     headers: {
