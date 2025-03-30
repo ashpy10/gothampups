@@ -5,15 +5,17 @@ const applicationRoutes = require('/server/routes/applicationRoutes'); // Import
 const Application = require('/server/models/Application'); // Import model
 
 const app = express();
-app.use(express.json());
 
 const cors = require('cors');
-app.use(cors({
-    origin: ['https://www.gothampups.com', 'http://localhost:3000'], // Add allowed origins
-    methods: ['GET', 'POST'],
-    allowedHeaders: ['Content-Type', 'Authorization']
-  }));
 
+// CORS Configuration
+const corsOptions = {
+  origin: ['https://www.gothampups.com', 'https://gothampups.vercel.app'], // Add all allowed origins
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
+};
+
+app.use(cors(corsOptions));
 // MongoDB connection
 mongoose.connect(process.env.MONGO_URI, {
   useNewUrlParser: true,
@@ -34,6 +36,11 @@ app.get('/test-db', async (req, res) => {
     res.status(500).send('Error connecting to database');
   }
 });
+
+app.use(cors(corsOptions));
+app.use(express.json());
+app.use('/api/applications', applicationRoutes);
+
 
 // Start the server
 const PORT = process.env.PORT || 3001;
