@@ -137,12 +137,12 @@ export const animals = [
       fee: "$2,000",
       gender: "Female",
       media: [
-        {type: "image", url: "public/assets/puppy/ivy1.png"},
-        {type: "image", url: "public/assets/puppy/ivy2.png"},
-        {type: "image", url: 'public/assets/puppy/9.png'},
-        {type: "image", url: 'public/assets/puppy/10.png'},
-        {type: "image", url: 'public/assets/puppy/11.png'},
-        {type: "image", url: 'public/assets/puppy/12.png'},
+        {type: "image", url: "/assets/puppy/ivy1.png"},
+        {type: "image", url: "/assets/puppy/ivy2.png"},
+        {type: "image", url: '/assets/puppy/9.png'},
+        {type: "image", url: '/assets/puppy/10.png'},
+        {type: "image", url: '/assets/puppy/11.png'},
+        {type: "image", url: '/assets/puppy/12.png'},
       ],
       health: [
         { icon:  "/assets/puppy/global/vaccine.png", title: "Vaccinations" },
