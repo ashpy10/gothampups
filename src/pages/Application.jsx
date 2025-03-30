@@ -56,40 +56,49 @@ const Application = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-
+      
+        // Convert formData to FormData for Formspree
+        const formDataObj = new FormData();
+        for (let key in formData) {
+          if (Array.isArray(formData[key])) {
+            formDataObj.append(key, formData[key].join(", "));
+          } else {
+            formDataObj.append(key, formData[key]);
+          }
+        }
+      
         try {
-            const response = await fetch("https://script.google.com/macros/s/AKfycbxZCxyS6XCeqI8ile1h51xMAeWHsvMMIzx7ZKTkxVPdsO8MJeWP0ZlyMgao6SEs8m46/exec", // 🚀 Update with live URL
-                {
-                    method: "POST",
-                    headers: {
-                        "Content-Type": "application/json",
-                    },
-                    body: JSON.stringify(formData),
-                }
-            );
-
-            if (response.ok) {
-                setSuccess(true);        
-                setFormData({
-                    name: "",
-                    email: "",
-                    tel: "",
-                    location: "",
-                    puppy_option: [],
-                    why: "",
-                    experience: "",
-                    pets: "",
-                  });
-            } else {
-                console.error("Error submitting application.");
+          const response = await fetch(
+            "https://formspree.io/f/mgvalnkr", // Replace with your Formspree URL
+            {
+              method: "POST",
+              body: formDataObj,
             }
+          );
+      
+          if (response.ok) {
+            setSuccess(true);
+            setFormData({
+              name: "",
+              email: "",
+              tel: "",
+              location: "",
+              puppy_option: [],
+              why: "",
+              experience: "",
+              pets: "",
+              questions: "",
+            });
+          } else {
+            console.error("Error submitting application.");
+          }
         } catch (error) {
-            console.error("Error:", error);
+          console.error("Error:", error);
         }
 
         setTimeout(() => {
             setSuccess(false);
-          }, 500000);
+          }, 5000)
 
     };
 
