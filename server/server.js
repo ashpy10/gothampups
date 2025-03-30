@@ -1,48 +1,62 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const cors = require('cors');
+const dotenv = require('dotenv');
 require('dotenv').config();
-const applicationRoutes = require('/server/routes/applicationRoutes'); // Import routes
-const Application = require('/server/models/Application'); // Import model
+
+
+dotenv.config(); // Load environment variables
 
 const app = express();
+app.use(express.json());
 
-const cors = require('cors');
+// ✅ CORS Configuration
+const allowedOrigins = [
+  'http://localhost:5173', // For local development
+  'https://www.gothampups.com', // Your production frontend
+];
 
-// CORS Configuration
 const corsOptions = {
-  origin: ['https://www.gothampups.com', 'https://gothampups.vercel.app'], // Add all allowed origins
-  methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  allowedHeaders: ['Content-Type', 'Authorization'],
+  origin: function (origin, callback) {
+    if (allowedOrigins.includes(origin) || !origin) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
+  methods: 'GET,POST,OPTIONS',
+  allowedHeaders: 'Content-Type,Authorization',
 };
 
 app.use(cors(corsOptions));
-// MongoDB connection
-mongoose.connect(process.env.MONGO_URI, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-})
+
+// ✅ MongoDB Connection
+mongoose
+  .connect(process.env.MONGO_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
   .then(() => console.log('MongoDB connected successfully!'))
   .catch((err) => console.error('MongoDB connection failed:', err));
 
-// Use application routes
-app.use('/api/applications', applicationRoutes);
+// ✅ Application API Route
+const Application = require('./models/Application');
 
-// Test DB Route
-app.get('/test-db', async (req, res) => {
+app.post('/api/applications', async (req, res) => {
   try {
-    const applications = await Application.find({});
-    res.json(applications);
+    const application = new Application(req.body);
+    await application.save();
+    res.status(201).json({ message: 'Application submitted successfully!' });
   } catch (error) {
-    res.status(500).send('Error connecting to database');
+    console.error('Error:', error);
+    res.status(500).json({ message: 'Error submitting application.' });
   }
 });
 
-app.use(cors(corsOptions));
-app.use(express.json());
-app.use('/api/applications', applicationRoutes);
+// ✅ Handle Preflight Requests for CORS
+app.options('*', cors(corsOptions));
 
-
-// Start the server
+// ✅ Start the server
 const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
