@@ -1,10 +1,11 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Gotham Pups Backend",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +18,7 @@
     "mongoose": "^8.13.1",
     "nodemailer": "^6.10.0"
   },
-  "proxy": "http://localhost:3001"
-
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
 }

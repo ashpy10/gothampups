@@ -8,4 +8,15 @@ export default defineConfig({
   },
   plugins: [react()],
   base: './', // Correct for relative paths in production
+
+  // ✅ Add the server proxy configuration
+  server: {
+    proxy: {
+      '/api': {
+        target: 'http://localhost:3001', // Backend URL
+        changeOrigin: true,
+        secure: false, // Optional, only needed if using HTTPS during dev
+      },
+    },
+  },
 });
