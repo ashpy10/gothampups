@@ -57,6 +57,11 @@ const Application = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
+        const API_URL =
+        process.env.NODE_ENV === 'production'
+            ? 'https://gothampups-production.up.railway.app/api/applications'
+            : 'http://localhost:3001/api/applications';
+            
         try {
             const response = await fetch("https://gothampups-production.up.railway.app/api/applications", {
                 method: "POST",
