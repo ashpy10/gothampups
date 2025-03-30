@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const applicationSchema = mongoose.Schema(
+const applicationSchema = new mongoose.Schema(
   {
     name: { type: String, required: true },
     email: { type: String, required: true },
@@ -10,12 +10,11 @@ const applicationSchema = mongoose.Schema(
     why: { type: String },
     experience: { type: String },
     pets: { type: String },
+    questions: { type: String },
   },
   {
     timestamps: true,
   }
 );
 
-const Application = mongoose.model("Application", applicationSchema);
-
-module.exports = Application;
+module.exports = mongoose.model('Application', applicationSchema);

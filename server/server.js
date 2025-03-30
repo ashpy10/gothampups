@@ -11,7 +11,9 @@ app.use(cors());
 mongoose.connect(process.env.MONGO_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
-});
+})
+.then(() => console.log('MongoDB connected successfully!'))
+.catch((err) => console.error('MongoDB connection failed:', err));
 
 // Application API Route
 app.post('/api/applications', async (req, res) => {
@@ -30,3 +32,13 @@ const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
+
+app.get('/test-db', async (req, res) => {
+    try {
+      const applications = await Application.find({});
+      res.json(applications);
+    } catch (error) {
+      res.status(500).send('Error connecting to database');
+    }
+  });
+  
