@@ -1,13 +1,18 @@
 const express = require('express');
 const mongoose = require('mongoose');
 require('dotenv').config();
-const cors = require('cors');
 const applicationRoutes = require('/server/routes/applicationRoutes'); // Import routes
 const Application = require('/server/models/Application'); // Import model
 
 const app = express();
 app.use(express.json());
-app.use(cors());
+
+const cors = require('cors');
+app.use(cors({
+    origin: ['https://www.gothampups.com', 'http://localhost:3000'], // Add allowed origins
+    methods: ['GET', 'POST'],
+    allowedHeaders: ['Content-Type', 'Authorization']
+  }));
 
 // MongoDB connection
 mongoose.connect(process.env.MONGO_URI, {
