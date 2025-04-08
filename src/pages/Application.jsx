@@ -158,11 +158,7 @@ const Application = () => {
                     {puppyName && <p>Make sure to check the correct box, you were interested in: {puppyName}</p>}
                     <div className="checkbox-group">
                         {[
-                            "Alfred",
-                            "Bane",
                             "Heath The Joker",
-                            "Helena The Huntress",
-                            "Posion Ivy",
                             "Edward The Riddler",
                             "Oswald The Penguin",
                             "Gordon"
