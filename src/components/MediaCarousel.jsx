@@ -24,6 +24,7 @@ const MediaCarousel = ({ media }) => {
                     src={media[currentIndex].url}
                     alt="Puppy media"
                     className="media-item"
+                    loading="lazy"
                     />
             ) : (
                 <video controls className="media-item">
