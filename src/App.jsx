@@ -142,9 +142,14 @@ const App = () => {
 
 
                 <div ref={puppyGridRef} className='puppy-grid'>
-                  {/* Map through puppies*/}
-                  {puppies.map((puppy) => (
-                    <PuppyCard key={puppy.name} puppy={puppy} />
+                  {[...animals]
+                    .sort((a, b) => {
+                      if (a.availability === "AVAILABLE" && b.availability !== "AVAILABLE") return -1;
+                      if (a.availability !== "AVAILABLE" && b.availability === "AVAILABLE") return 1;
+                      return 0; // no change
+                    })
+                    .map((puppy) => (
+                      <PuppyCard key={puppy.id} puppy={puppy} />
                   ))}
                 </div>
               </div>
