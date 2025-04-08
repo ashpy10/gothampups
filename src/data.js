@@ -262,7 +262,7 @@ export const animals = [
       fee: "$2,000",
       gender: "Male",
       media: [
-        {type: "image", url: "/assets/puppy/gordon1.png"},
+        {type: "image", url: "/assets/puppy/gordon1.webp"},
         {type: "image", url: '/assets/puppy/20.png'},
         {type: "image", url: '/assets/puppy/21.png'},
         {type: "image", url: '/assets/puppy/22.png'},
