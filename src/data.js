@@ -267,7 +267,6 @@ export const animals = [
         {type: "image", url: '/assets/puppy/21.png'},
         {type: "image", url: '/assets/puppy/22.png'},
         {type: "image", url: '/assets/puppy/23.png'},
-        {type: "video", url: "/assets/video/gordon.mov"},
       ],
       health: [
         { icon:  "/assets/puppy/global/vaccine.png", title: "Vaccinations" },
