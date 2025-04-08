@@ -5,7 +5,7 @@ export const animals = [
       dob: "2025-02-09",
       description:
       "Meet Alfred – The Noble Guardian. Every hero needs a loyal companion, and Alfred is the perfect gentleman for the job. With his regal features and wise, knowing eyes, this distinguished pup carries himself like a true aristocrat of the canine world. One of the biggest in the litter, Alfred is a gentle giant—docile, affectionate, and always ready to offer a comforting paw. His calming presence is a superpower in itself, making him the perfect sidekick for those in need of a steady, loving companion. While he enjoys a good play session, Alfred is just as content curling up in a cozy nook for a well-earned nap—because even the most devoted guardians deserve their rest. Extremely smart, endlessly sweet, and brimming with quiet loyalty, Alfred is searching for a family worthy of his unwavering devotion. Adopt him, and you’ll have a steadfast friend who will always be by your side—no butler uniform required. 🖤🐾",      active: true,
-      availability: "AVAILABLE",
+      availability: "ON HOLD",
       fee: "$2,000",
       gender: "Male",
       media: [
@@ -48,7 +48,7 @@ export const animals = [
       description:
         "Meet Bane – The Unstoppable Force. Born in the dark, destined for greatness—Bane is a force to be reckoned with! One of the biggest pups in the litter, he carries himself like a true heavyweight champion, using his impressive size and strength to command attention (and maybe first dibs at the food bowl). Playful, athletic, and fiercely independent, Bane knows exactly what he wants—and he goes after it with unshakable determination. Whether it’s leading the charge during playtime, claiming the best nap spot, or making sure his humans give him the attention he deserves, he’s always at the head of the pack. But beneath that powerful exterior lies a heart of gold. With the right family to match his confidence and energy, Bane will be the ultimate adventure companion—a loyal guardian and a fearless friend. Are you ready to welcome this unstoppable pup into your home? Adopt Bane, and together, you’ll conquer the world. 🖤💪🐾",
       active: true,
-      availability: "AVAILABLE",
+      availability: "NOT AVAILABLE",
       fee: "$2,000",
       breed: "Golden Retriever",
       gender: "Male",
@@ -133,7 +133,7 @@ export const animals = [
       description:
         "Meet Poison Ivy! Ivy is a bundle of joy, bursting with life, love, and endless cuddles! She's really blossomed lately, showing off her playful personality and love for human interaction. Whether it's playtime or snuggle time, Ivy is always ready to be by your side, making her the perfect furry companion. When fully grown, Poison Ivy is expected to weigh between 45 and 55 pounds, and her gorgeous coat will be just as stunning as her mom’s – a radiant golden hue that will shine as brightly as her personality. ",
       active: true,
-      availability: "AVAILABLE",
+      availability: "NOT AVAILABLE",
       fee: "$2,000",
       gender: "Female",
       media: [
@@ -175,7 +175,7 @@ export const animals = [
       description:
         "Meet Helena the Huntress! Helena is a bright and playful little adventurer who loves being around people, especially when it means getting cuddles! Her curious nature and sharp eye contact make her a quick learner who’s always eager to explore her surroundings. Full of energy and affection, Helena thrives on activity and would make an amazing addition to a lively household – especially one with children who can keep up with her playful spirit.",
       active: true,
-      availability: "AVAILABLE",
+      availability: "ON HOLD",
       fee: "$2,000",
       gender: "Female",
       media: [
