@@ -175,7 +175,7 @@ export const animals = [
       description:
         "Meet Helena the Huntress! Helena is a bright and playful little adventurer who loves being around people, especially when it means getting cuddles! Her curious nature and sharp eye contact make her a quick learner who’s always eager to explore her surroundings. Full of energy and affection, Helena thrives on activity and would make an amazing addition to a lively household – especially one with children who can keep up with her playful spirit.",
       active: true,
-      availability: "ON HOLD",
+      availability: "NOT AVAILABLE",
       fee: "$2,000",
       gender: "Female",
       media: [
