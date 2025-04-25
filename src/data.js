@@ -5,7 +5,7 @@ export const animals = [
       dob: "2025-02-09",
       description:
       "Meet Alfred – The Noble Guardian. Every hero needs a loyal companion, and Alfred is the perfect gentleman for the job. With his regal features and wise, knowing eyes, this distinguished pup carries himself like a true aristocrat of the canine world. One of the biggest in the litter, Alfred is a gentle giant—docile, affectionate, and always ready to offer a comforting paw. His calming presence is a superpower in itself, making him the perfect sidekick for those in need of a steady, loving companion. While he enjoys a good play session, Alfred is just as content curling up in a cozy nook for a well-earned nap—because even the most devoted guardians deserve their rest. Extremely smart, endlessly sweet, and brimming with quiet loyalty, Alfred is searching for a family worthy of his unwavering devotion. Adopt him, and you’ll have a steadfast friend who will always be by your side—no butler uniform required. 🖤🐾",      active: true,
-      availability: "ON HOLD",
+      availability: "NOT AVAILABLE",
       fee: "$2,000",
       gender: "Male",
       media: [
@@ -92,7 +92,7 @@ export const animals = [
       description:
         "Meet Edward – The Enigmatic Cuddle Connoisseur. Riddle me this: Who’s the smartest, sweetest, and most affectionate pup in all of Gotham? The answer is clear—it’s Edward! Unlike his criminal namesake, this little mastermind has no plans for chaos—just cuddles. One of the smaller pups in the litter, Edward may not command attention with size, but he’ll capture your heart with his quiet, soulful presence. His love language? Human touch. Whether it's resting his head in your lap or locking eyes with you in a silent plea for affection, Edward is always seeking connection. Brilliant and responsive to training, he’s ready to learn every trick in the book—as long as the reward is love (and maybe a treat or two). Perfect for an older couple or a home in need of a calm, sweet companion, Edward’s greatest mystery isn’t whether he’ll steal your heart—it’s how you ever lived without him. Adopt him, and you’ll never have to question where your most loyal companion is—right by your side.💚🐾",
       active: true,
-      availability: "AVAILABLE",
+      availability: "NOT AVAILABLE",
       fee: "$2,000",
       gender: "Male",
       media: [
@@ -258,7 +258,7 @@ export const animals = [
       description:
         "Meet Gordon – The Noble Leader. In a city full of chaos (or in this case, playful puppies), every pack needs a leader with integrity—and Gordon is just the pup for the job. With his classic golden retriever looks and sharp mind, he’s the picture of loyalty, courage, and unwavering devotion. One of the smartest in the bunch, Gordon is a natural-born problem solver—whether that means finding the quickest escape route or rallying his siblings for a playful romp. He thrives on human interaction, always eager to lend a gentle paw or strike up a conversation (because yes, this pup has plenty to say!). Curious, clever, and endlessly sweet, Gordon is searching for a family that will appreciate his leadership skills, his big heart, and his knack for always doing the right thing. If you’re looking for a faithful companion to stand by your side through thick and thin, Gordon is ready to report for duty. 🦴🖤🐾",
       active: true,
-      availability: "AVAILABLE",
+      availability: "NOT AVAILABLE",
       fee: "$2,000",
       gender: "Male",
       media: [
