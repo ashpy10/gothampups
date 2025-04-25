@@ -220,8 +220,8 @@ export const animals = [
       fee: "$2,000",
       gender: "Male",
       media: [
-        {type: "image", url: "/assets/puppy/ozapril1.png"},
-        {type: "image", url: '/assets/puppy/ozapril2.png'},
+        {type: "image", url: "/assets/puppy/ozapril1.jpg"},
+        {type: "image", url: '/assets/puppy/ozapril2.jpg'},
         {type: "image", url: '/assets/puppy/oz1.png'},
         {type: "image", url: '/assets/puppy/38.png'},
         {type: "image", url: '/assets/puppy/39.png'},
@@ -304,8 +304,8 @@ export const animals = [
       fee: "$2,000",
       gender: "Male",
       media: [
-        {type: "image", url: "/assets/puppy/heathapril1.png"},
-        {type: "image", url: '/assets/puppy/heathapril2.png'},
+        {type: "image", url: "/assets/puppy/heathapril1.jpg"},
+        {type: "image", url: '/assets/puppy/heathapril2.jpg'},
         {type: "image", url: '/assets/puppy/heath1.png'},
         {type: "image", url: '/assets/puppy/25.png'},
         {type: "image", url: '/assets/puppy/26.png'},
